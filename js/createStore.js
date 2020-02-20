@@ -30,7 +30,7 @@ function render() {
   container.textContent = store.getState().count;
 }
 
-let store = createStore(reducer)
+let store = createStore(reduce)
 store.dispatch({ type: "@@INIT" });
 let button = document.getElementById("button");
 
